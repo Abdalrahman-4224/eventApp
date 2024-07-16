@@ -13,7 +13,7 @@ and same for ios from ..ios/Runner/info.plist, and search for flutterbooksample.
 flutter pub run change_app_package_name:main <your new package name>,
 flutter pub global run rename --bundleId <your new package name>,
 flutter pub global run rename --appname <your new App name>,
-in search replace (package:app) with (package:<your new App name>)
+in search replace (package:liverpod_structure) with (package:<your new App name>)
 to change your app package name and name.
 
 3- change app name from pubspec.yaml and from main.dart.
@@ -42,4 +42,4 @@ custom_lint
 
 13- if web run these commands (gcloud init) && (gsutil cors set cors.json storage bucket)
 
-14- for hosting assetslink for deeplinking follow this article: (https://medium.com/androiddevelopers/android-app-links-deploy-assetlinks-json-in-minutes-d7082dffcac)
+14- for hosting assetslink for deeplinking follow this article: (https://medium.com/androiddevelopers/android-app-links-deploy-assetlinks-json-in-minutes-d7082dffcac)# eventApp
