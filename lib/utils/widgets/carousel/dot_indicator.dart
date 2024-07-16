@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app/utils/constants/sizes.dart';
+import 'package:liverpod_structure/utils/constants/sizes.dart';
 
 class DotIndicator extends StatelessWidget {
   const DotIndicator({

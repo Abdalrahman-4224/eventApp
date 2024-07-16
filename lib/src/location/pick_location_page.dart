@@ -1,6 +1,6 @@
 // import 'dart:async';
 
-// import 'package:app/common_lib.dart';
+// import 'package:liverpod_structure/common_lib.dart';
 // import 'package:flutter/material.dart';
 // import 'package:geolocator/geolocator.dart';
 // import 'package:google_maps_flutter/google_maps_flutter.dart';

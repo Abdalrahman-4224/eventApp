@@ -1,5 +1,5 @@
-import 'package:app/common_lib.dart';
-import 'package:app/utils/widgets/buttons/rounded_button.dart';
+import 'package:liverpod_structure/common_lib.dart';
+import 'package:liverpod_structure/utils/widgets/buttons/rounded_button.dart';
 import 'package:flutter/material.dart';
 
 class RoundedButtonWithText extends StatelessWidget {

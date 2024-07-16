@@ -1,6 +1,6 @@
-import 'package:app/common_lib.dart';
-import 'package:app/theme/app_theme.dart';
-import 'package:app/utils/extensions.dart';
+import 'package:liverpod_structure/common_lib.dart';
+import 'package:liverpod_structure/theme/app_theme.dart';
+import 'package:liverpod_structure/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 class Utils {

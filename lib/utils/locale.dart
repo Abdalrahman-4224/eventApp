@@ -1,6 +1,6 @@
 
-import 'package:app/common_lib.dart';
-import 'package:app/utils/extensions.dart';
+import 'package:liverpod_structure/common_lib.dart';
+import 'package:liverpod_structure/utils/extensions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:form_validator/form_validator.dart';
 

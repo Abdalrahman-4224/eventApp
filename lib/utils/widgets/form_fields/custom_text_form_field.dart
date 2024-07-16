@@ -1,4 +1,4 @@
-import 'package:app/utils/extensions.dart';
+import 'package:liverpod_structure/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
@@ -34,9 +34,11 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      
       controller: controller,
       decoration: InputDecoration(
-        fillColor: fillColor,
+        border: InputBorder.none,
+        fillColor: Color(0xff111122),
         hintText: hintText,
         labelText: labelText ?? hintText,
         hintStyle: context.textTheme.bodyLarge?.copyWith(

@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:app/data/services/clients/_clients.dart';
+import 'package:liverpod_structure/data/services/clients/_clients.dart';
 
 class FileJsonConverter extends JsonConverter<File, MultipartFile> {
   const FileJsonConverter();

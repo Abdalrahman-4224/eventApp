@@ -1,4 +1,4 @@
-import 'package:app/common_lib.dart';
+import 'package:liverpod_structure/common_lib.dart';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 

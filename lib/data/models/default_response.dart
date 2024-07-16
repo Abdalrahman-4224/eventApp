@@ -1,4 +1,4 @@
-import 'package:app/data/models/json_types.dart';
+import 'package:liverpod_structure/data/models/json_types.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'default_response.g.dart';

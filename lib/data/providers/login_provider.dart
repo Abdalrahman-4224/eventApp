@@ -1,6 +1,6 @@
-import 'package:app/data/models/authentication_model.dart';
-import 'package:app/data/providers/authentication_provider.dart';
-import 'package:app/data/services/clients/auth_client.dart';
+import 'package:liverpod_structure/data/models/authentication_model.dart';
+import 'package:liverpod_structure/data/providers/authentication_provider.dart';
+import 'package:liverpod_structure/data/services/clients/auth_client.dart';
 
 import '../services/clients/_clients.dart';
 

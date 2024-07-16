@@ -1,9 +1,9 @@
-import 'package:app/utils/extensions.dart';
+import 'package:liverpod_structure/utils/extensions.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:skeletons/skeletons.dart';
 
-import 'package:app/common_lib.dart';
+import 'package:liverpod_structure/common_lib.dart';
 
 class AccountAvatar extends StatelessWidget {
   const AccountAvatar({

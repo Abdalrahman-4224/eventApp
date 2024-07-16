@@ -78,3 +78,8 @@ class Time {
   static const Duration large = Duration(milliseconds: 700);
   static const Duration extraLarge = Duration(seconds: 1);
 }
+
+extension ContextEx on BuildContext {
+  double get width => MediaQuery.of(this).size.width;
+  double get height => MediaQuery.of(this).size.height;
+}

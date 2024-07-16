@@ -1,4 +1,4 @@
-import 'package:app/utils/constants/sizes.dart';
+import 'package:liverpod_structure/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -22,7 +22,7 @@ class AppTheme {
     );
   }
 
-  final borderRadius = BorderRadius.circular(BorderSize.extraSmall);
+  final borderRadius = BorderRadius.circular(BorderSize.medium);
   final padding = const EdgeInsets.symmetric(vertical: 16, horizontal: 14);
 
   Brightness getBrightness() {
@@ -52,16 +52,14 @@ class AppTheme {
     }
 
     return InputDecorationTheme(
+      
       contentPadding: padding,
       fillColor: colorScheme.surfaceContainerHighest.withOpacity(0.5),
       filled: true,
       activeIndicatorBorder: BorderSide.none,
-      border: buildBorder(colorScheme.outline.withOpacity(0.5)),
       errorBorder: buildBorder(colorScheme.error),
-      enabledBorder: buildBorder(colorScheme.outline.withOpacity(0.5)),
       focusedBorder: buildBorder(colorScheme.primary),
       focusedErrorBorder: buildBorder(colorScheme.error, width: 2),
-      disabledBorder: buildBorder(colorScheme.outline.withOpacity(0.5)),
     );
   }
 

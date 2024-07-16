@@ -1,5 +1,5 @@
 
-import 'package:app/utils/extensions.dart';
+import 'package:liverpod_structure/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 class PasswordFormField extends StatefulWidget {

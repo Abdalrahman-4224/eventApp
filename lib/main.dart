@@ -1,4 +1,4 @@
-import 'package:app/app.dart';
+import 'package:liverpod_structure/app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -12,7 +12,7 @@ Future<void> main() async {
 
   final sharedPreferences = await SharedPreferences.getInstance();
 
-  timeago.setLocaleMessages('ar', timeago.ArMessages()); // Add french messages
+  timeago.setLocaleMessages('en', timeago.EnMessages()); // Add french messages
 
   runApp(
     ProviderScope(

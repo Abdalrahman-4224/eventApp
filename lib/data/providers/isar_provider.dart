@@ -1,7 +1,7 @@
 
 // import 'package:isar/isar.dart';
 // import 'package:path_provider/path_provider.dart';
-// import 'package:app/data/services/clients/_clients.dart';
+// import 'package:liverpod_structure/data/services/clients/_clients.dart';
 
 // part 'isar_provider.g.dart';
 

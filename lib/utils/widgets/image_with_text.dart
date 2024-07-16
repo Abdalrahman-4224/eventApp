@@ -1,4 +1,4 @@
-import 'package:app/common_lib.dart';
+import 'package:liverpod_structure/common_lib.dart';
 import 'package:flutter/material.dart';
 
 class ImageWithText extends StatelessWidget {

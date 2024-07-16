@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:lottie/lottie.dart';
-// import 'package:app/common_lib.dart';
+// import 'package:liverpod_structure/common_lib.dart';
 
 // class LottieWithText extends StatelessWidget {
 //   const LottieWithText(

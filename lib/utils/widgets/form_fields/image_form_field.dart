@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:app/common_lib.dart';
-import 'package:app/data/services/local_services.dart';
+import 'package:liverpod_structure/common_lib.dart';
+import 'package:liverpod_structure/data/services/local_services.dart';
 import 'package:flutter/material.dart';
 import 'package:image_cropper/image_cropper.dart';
 

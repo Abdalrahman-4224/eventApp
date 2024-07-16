@@ -1,5 +1,5 @@
-import 'package:app/common_lib.dart';
-import 'package:app/data/providers/settings_provider.dart';
+import 'package:liverpod_structure/common_lib.dart';
+import 'package:liverpod_structure/data/providers/settings_provider.dart';
 import 'package:flutter/material.dart';
 
 

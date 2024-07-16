@@ -1,5 +1,5 @@
-import 'package:app/data/models/authentication_model.dart';
-import 'package:app/data/services/clients/callback.dart';
+import 'package:liverpod_structure/data/models/authentication_model.dart';
+import 'package:liverpod_structure/data/services/clients/callback.dart';
 
 import '_clients.dart';
 

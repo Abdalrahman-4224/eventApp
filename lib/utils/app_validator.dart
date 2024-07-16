@@ -1,5 +1,5 @@
-import 'package:app/common_lib.dart';
-import 'package:app/utils/validation_regix.dart';
+import 'package:liverpod_structure/common_lib.dart';
+import 'package:liverpod_structure/utils/validation_regix.dart';
 import 'package:flutter/material.dart';
 import 'package:form_validator/form_validator.dart';
 

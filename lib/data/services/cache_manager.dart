@@ -2,8 +2,8 @@
 // import 'package:path_provider/path_provider.dart';
 // import 'dart:io';
 // import 'package:isar/isar.dart';
-// import 'package:app/data/models/post_model.dart';
-// import 'package:app/data/services/file_plugin.dart';
+// import 'package:liverpod_structure/data/models/post_model.dart';
+// import 'package:liverpod_structure/data/services/file_plugin.dart';
 
 // class CacheManager {
 //   static const int maxCacheSize = 1000 * 1024 * 1024; // 1000 MB

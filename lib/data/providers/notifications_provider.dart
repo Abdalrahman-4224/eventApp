@@ -4,7 +4,7 @@
 // import 'package:flutter/material.dart';
 // import 'package:http/http.dart' as http;
 // import 'package:riverpod_state/riverpod_state.dart';
-// import 'package:app/data/services/clients/_clients.dart';
+// import 'package:liverpod_structure/data/services/clients/_clients.dart';
 
 // part 'notifications_provider.g.dart';
 

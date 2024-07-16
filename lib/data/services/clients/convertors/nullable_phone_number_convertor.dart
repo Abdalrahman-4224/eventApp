@@ -1,4 +1,4 @@
-import 'package:app/data/models/phone_number.dart';
+import 'package:liverpod_structure/data/models/phone_number.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 class PhoneNumberConvertor implements JsonConverter<PhoneNumber, String> {

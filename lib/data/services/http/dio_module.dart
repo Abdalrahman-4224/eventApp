@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:app/data/providers/authentication_provider.dart';
-import 'package:app/data/services/clients/_clients.dart';
-import 'package:app/data/services/interceptors/authenticator.dart';
-import 'package:app/utils/constants/api_document.dart';
-import 'package:app/utils/snackbar.dart';
+import 'package:liverpod_structure/data/providers/authentication_provider.dart';
+import 'package:liverpod_structure/data/services/clients/_clients.dart';
+import 'package:liverpod_structure/data/services/interceptors/authenticator.dart';
+import 'package:liverpod_structure/utils/constants/api_document.dart';
+import 'package:liverpod_structure/utils/snackbar.dart';
 import 'package:awesome_dio_interceptor/awesome_dio_interceptor.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

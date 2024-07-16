@@ -5,7 +5,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../theme/theme_extension.dart';
 import 'object_preference_provider.dart';
-import 'package:app/data/shared_preference/preferences.dart';
+import 'package:liverpod_structure/data/shared_preference/preferences.dart';
 
 part 'settings_provider.freezed.dart';
 part 'settings_provider.g.dart';

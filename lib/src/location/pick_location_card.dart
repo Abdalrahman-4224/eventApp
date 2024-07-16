@@ -2,9 +2,9 @@
 
 // import 'package:flutter/material.dart';
 // import 'package:google_maps_flutter/google_maps_flutter.dart';
-// import 'package:app/common_lib.dart';
-// import 'package:app/src/location/current_location_card.dart';
-// import 'package:app/src/location/pick_location_page.dart';
+// import 'package:liverpod_structure/common_lib.dart';
+// import 'package:liverpod_structure/src/location/current_location_card.dart';
+// import 'package:liverpod_structure/src/location/pick_location_page.dart';
 
 // class PickLocationCard extends StatelessWidget {
 //   const PickLocationCard({
