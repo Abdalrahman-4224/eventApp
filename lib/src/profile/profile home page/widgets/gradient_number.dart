@@ -27,7 +27,7 @@ class GradientNumberText extends StatelessWidget {
       },
       child: Text(
         text,
-        style: TextStyle(fontSize: 24,fontWeight: FontWeight.w700).copyWith(color: Colors.white) ?? const TextStyle(color: Colors.white),
+        style: const TextStyle(fontSize: 24,fontWeight: FontWeight.w700).copyWith(color: Colors.white) ?? const TextStyle(color: Colors.white),
       ),
     );
   }

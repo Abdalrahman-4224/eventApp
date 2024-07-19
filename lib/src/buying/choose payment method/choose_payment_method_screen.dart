@@ -35,7 +35,7 @@ class ChoosePaymentMethodScreen extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: GradientButton(
+                child: GradientButton.gradientButton(
                   ontap: () {
                     // Your button action
                   },

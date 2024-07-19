@@ -26,8 +26,7 @@ Opacity CircleAppbarButton(String assetsname, {int colorhex = 0xFF09FBD3}) {
             padding: const EdgeInsets.all(8.0),
             child: SvgPicture.asset(
               assetsname,
-              colorFilter:
-                  const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+              color:Colors.white,
                   
             ),
           ),

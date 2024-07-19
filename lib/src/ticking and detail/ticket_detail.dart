@@ -38,118 +38,113 @@ class _TicketDetailState extends ConsumerState<TicketDetail> {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: TickingAppBar(),
-          body: Stack(
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.center,
+              const Text(
+                'Jazz Night',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 28,
+                    fontWeight: FontWeight.w700),
+              ),
+              const Text(
+                'with Ali Jasseb',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 28,
+                    fontWeight: FontWeight.w400),
+              ),
+              const Text(
+                'A pretty night with calm and relax jazz A pretty night with calm and relax jazz A pretty night with calm and relax jazz ',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 28 / 2,
+                    fontWeight: FontWeight.w400),
+                textAlign: TextAlign.center,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: SvgPicture.asset(
+                        Assets.assetsIconsLocation,
+                        height: 24,
+                        width: 24,
+                      ),
+                    ),
+                    const Text(
+                      'Baghdah, Almonsour',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400),
+                    )
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: SvgPicture.asset(
+                        Assets.assetsIconsCalendar,
+                        height: 24,
+                        width: 24,
+                        color:Colors.white,
+                      ),
+                    ),
+                    const Text(
+                      'March 2-9, 2024',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400),
+                    )
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: SvgPicture.asset(
+                        Assets.assetsIconsMusic,
+                        height: 24,
+                        width: 24,
+                      ),
+                    ),
+                    const Text(
+                      'jazz',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400),
+                    )
+                  ],
+                ),
+              ),
+              FadedDivider(context),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    'Jazz Night',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
-                        fontWeight: FontWeight.w700),
-                  ),
-                  const Text(
-                    'with Ali Jasseb',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
-                        fontWeight: FontWeight.w400),
-                  ),
-                  const Text(
-                    'A pretty night with calm and relax jazz A pretty night with calm and relax jazz A pretty night with calm and relax jazz ',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28 / 2,
-                        fontWeight: FontWeight.w400),
-                    textAlign: TextAlign.center,
+                  const Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Text('25000 IQD',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 20,color: Colors.white),),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
-                          child: SvgPicture.asset(
-                            Assets.assetsIconsLocation,
-                            height: 24,
-                            width: 24,
-                          ),
-                        ),
-                        const Text(
-                          'Baghdah, Almonsour',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
-                          child: SvgPicture.asset(
-                            Assets.assetsIconsCalendar,
-                            height: 24,
-                            width: 24,
-                            colorFilter:
-                                const ColorFilter.mode(Colors.white, BlendMode.srcIn),
-                          ),
-                        ),
-                        const Text(
-                          'March 2-9, 2024',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
-                          child: SvgPicture.asset(
-                            Assets.assetsIconsMusic,
-                            height: 24,
-                            width: 24,
-                          ),
-                        ),
-                        const Text(
-                          'jazz',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400),
-                        )
-                      ],
-                    ),
-                  ),
-                  FadedDivider(context),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: Text('25000 IQD',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 20,color: Colors.white),),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: BuyTicketButton(context),
-                      ),
-                    ],
+                    padding: const EdgeInsets.all(10.0),
+                    child: BuyTicketButton(context),
                   ),
                 ],
-              )
+              ),
             ],
           ),
         ),

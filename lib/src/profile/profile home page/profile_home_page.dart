@@ -1,13 +1,12 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:gradient_borders/gradient_borders.dart';
+
 import 'package:liverpod_structure/common_lib.dart';
 import 'package:liverpod_structure/src/profile/profile%20home%20page/widgets/custom_profile_divider.dart';
 import 'package:liverpod_structure/src/profile/profile%20home%20page/widgets/gradient_border_image.dart';
-import 'package:liverpod_structure/src/profile/profile%20home%20page/widgets/gradient_number.dart';
+
 import 'package:liverpod_structure/src/profile/profile%20home%20page/widgets/profile_cards.dart';
-import 'package:liverpod_structure/utils/constants/custom_text_sizes.dart';
+
 
 class ProfileHomePage extends StatelessWidget {
   const ProfileHomePage({super.key});
@@ -41,10 +40,10 @@ class ProfileHomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 24,),
+              const SizedBox(height: 24,),
               Container(
                 decoration: BoxDecoration(
-                    color: Color(0xff14161F),
+                    color: const Color(0xff14161F),
                     borderRadius: BorderRadiusDirectional.circular(8)),
                 width: 348,
                 height: 93,
@@ -69,7 +68,7 @@ class ProfileHomePage extends StatelessWidget {
                 width: 348,
                 height: 134,
                 decoration: BoxDecoration(
-                    color: Color(0xff14161F),
+                    color: const Color(0xff14161F),
                     borderRadius: BorderRadiusDirectional.circular(8)),
                 child: Column(mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -85,11 +84,11 @@ class ProfileHomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 8,),
+              const SizedBox(height: 8,),
               Container(
                 
                 decoration: BoxDecoration(
-                    color: Color(0xff14161F),
+                    color: const Color(0xff14161F),
                     borderRadius: BorderRadiusDirectional.circular(8)),
                 width: 348,
                 height: 93,

@@ -54,7 +54,7 @@ class OnlinePayment extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: GradientButton(ontap: () {}),
+                child: GradientButton.gradientButton(ontap: () {}),
               ),
               const SizedBox(
                 height: 50,

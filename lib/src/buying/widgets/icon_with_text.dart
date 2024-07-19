@@ -1,13 +1,12 @@
 
   import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:liverpod_structure/utils/constants/assets.dart';
 import 'package:liverpod_structure/utils/constants/custom_text_sizes.dart';
 
 Padding iconWithText(String iconname,text) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(child: Row(children: [
+      child: Row(children: [
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Container(
@@ -25,6 +24,6 @@ Padding iconWithText(String iconname,text) {
                       
                     ),
                     smallText(text),
-                  ],),),
+                  ],),
     );
   }

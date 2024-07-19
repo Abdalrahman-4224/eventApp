@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
+
 import 'package:liverpod_structure/common_lib.dart';
 import 'package:liverpod_structure/data/providers/settings_provider.dart';
 import 'package:liverpod_structure/src/home/widgets/build_scroll_view_container.dart';
 import 'package:liverpod_structure/src/home/widgets/custom_home_page_appbar.dart';
-import 'package:liverpod_structure/utils/widgets/background.dart';
-import 'package:liverpod_structure/utils/widgets/custom_bottom_navigation_bar.dart';
+
 
 class HomePage extends StatefulHookConsumerWidget {
   const HomePage({super.key});
@@ -20,14 +19,11 @@ class _HomePageState extends ConsumerState<HomePage> {
     final settings = ref.watch(settingsProvider);
 
     return Scaffold(
-      bottomNavigationBar: CustomBottomNavigationBar(
-        unselectedItemColor: const Color(0xff5B5B5B),
-      ),
-      backgroundColor: Colors.black,
+      backgroundColor: const Color.fromARGB(67, 0, 0, 0),
       body: SafeArea(
         child: Stack(
           children: [
-            BackGround(),
+            Image.asset(Assets.assetsImages2colorBackground),
             Center(
               child: SingleChildScrollView(
                 child: Column(
@@ -37,7 +33,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                       length: tabs.length,
                       child: Column(
                         children: [
-                          Container(
+                          SizedBox(
                             width: 390,
                             height: 48,
                             child: TabBar(
@@ -47,8 +43,9 @@ class _HomePageState extends ConsumerState<HomePage> {
                               indicator: CustomGradientTabIndicator(),
                             ),
                           ),
-                          Container(
-                            height: 500, // Adjust the height as needed
+                          // ignore: sized_box_for_whitespace
+                          SizedBox(
+                            height: 550, // Adjust the height as needed
                             child: TabBarView(
                               children: tabs.map((tab) => tab.content).toList(),
                             ),
@@ -143,8 +140,8 @@ class _CustomGradientTabIndicatorPainter extends BoxPainter {
       ))
       ..style = PaintingStyle.fill;
 
-    final double width = 55.0;
-    final double height = 2.0;
+    const double width = 55.0;
+    const double height = 2.0;
 
     final Offset indicatorOffset = Offset(
       offset.dx + (configuration.size!.width / 2) - (width / 2),

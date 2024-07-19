@@ -1,16 +1,21 @@
+import 'package:liverpod_structure/src/Likes/no_likes_screen.dart';
 import 'package:liverpod_structure/src/buying/choose%20payment%20method/choose_payment_method_screen.dart';
 import 'package:liverpod_structure/src/buying/online%20payment/online_payment.dart';
+import 'package:liverpod_structure/src/calender/calender_screen.dart';
+import 'package:liverpod_structure/src/choosingseat/choosing_seat_screen.dart';
 import 'package:liverpod_structure/src/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:liverpod_structure/src/login/otp_screen.dart';
+import 'package:liverpod_structure/src/navigation/navigation_logic.dart';
 import 'package:liverpod_structure/src/profile/adding%20card/adding_card_screen.dart';
 import 'package:liverpod_structure/src/profile/card%20information/card_information_screen.dart';
 import 'package:liverpod_structure/src/profile/profile%20home%20page/profile_home_page.dart';
 import 'package:liverpod_structure/src/profile/ticket%20archive/ticket_archive_screen.dart';
 import 'package:liverpod_structure/src/search/google_map.dart';
-import 'package:liverpod_structure/src/tickets/tickets_screen.dart';
+import 'package:liverpod_structure/src/tickets/liked%20tickets/liked_tickets.dart';
+import 'package:liverpod_structure/src/tickets/no%20liked%20tickets/tickets_screen.dart';
 import 'package:liverpod_structure/src/ticking%20and%20detail/ticket_detail.dart';
 import '../src/buying/name.dart';
 import '../src/buying/payment/payment.dart';
@@ -31,7 +36,7 @@ final router = GoRouter(
     GoRoute(
       parentNavigatorKey: _rootNavigatorKey,
       path: RoutesDocument.home,
-      builder: (context, state) =>  const TicketsScreen(),
+      builder: (context, state) =>  const ChoosingSeatScreen(),
     ),
 
     //TODO change to HomePage() above;

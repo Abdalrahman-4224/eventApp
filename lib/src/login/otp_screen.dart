@@ -40,7 +40,7 @@ class _OtpScreenState extends ConsumerState<OtpScreen> {
         Image.asset(Assets.assetsImages2colorBackground),
         Scaffold(
           backgroundColor: Colors.transparent,
-          appBar: CustomAppBar(Navigator.of(context).pop),
+          appBar: CustomAppBar(onTap:Navigator.of(context).pop),
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -92,7 +92,7 @@ class _OtpScreenState extends ConsumerState<OtpScreen> {
                 ],
               ),
               const SizedBox(height: 20),
-              GradientButton(
+              GradientButton.gradientButton(
                 ontap: _submitOtp,
               ),
             ],

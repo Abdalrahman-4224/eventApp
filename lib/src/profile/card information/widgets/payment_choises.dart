@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:liverpod_structure/common_lib.dart';
-import 'package:liverpod_structure/data/services/clients/_clients.dart';
 import 'package:liverpod_structure/src/buying/online%20payment/online_payment_card.dart';
 import 'package:liverpod_structure/utils/constants/custom_text_sizes.dart';
 

@@ -10,8 +10,8 @@ class NameScreen extends StatelessWidget {
   
 
  
-  TextEditingController _nametController=TextEditingController();
-  TextEditingController _phoneNumberController=TextEditingController();
+  TextEditingController nametController=TextEditingController();
+  TextEditingController phoneNumberController=TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -69,20 +69,20 @@ class NameScreen extends StatelessWidget {
                       mediumBoldText('Ticket num1'),
                       smallBoldText('section P, ROW 3')],),
                   ),
-                  CustomTextFormField(controller: _nametController, hintText: 'holder name'),
-                  SizedBox(height: 8,),
+                  CustomTextFormField(controller: nametController, hintText: 'holder name'),
+                  const SizedBox(height: 8,),
                   Row(children: [
                     Flexible(
                       flex: 1,
-                      child: CustomTextFormField(controller: _phoneNumberController, hintText: '+964')),
-                    SizedBox(width:8,),
+                      child: CustomTextFormField(controller: phoneNumberController, hintText: '+964')),
+                    const SizedBox(width:8,),
                     
                       Flexible(
                         flex: 3,
-                        child: CustomTextFormField(controller:_phoneNumberController , hintText: 'phone number'))
+                        child: CustomTextFormField(controller:phoneNumberController , hintText: 'phone number'))
                   ],),
-                  SizedBox(height: 8,),
-                  CustomTextFormField(controller: _phoneNumberController, hintText: 'Phone Number'),
+                  const SizedBox(height: 8,),
+                  CustomTextFormField(controller: phoneNumberController, hintText: 'Phone Number'),
                   Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -90,23 +90,23 @@ class NameScreen extends StatelessWidget {
                       mediumBoldText('Ticket num1'),
                       smallBoldText('section P, ROW 3')],),
                   ),
-                  CustomTextFormField(controller: _nametController, hintText: 'holder name'),
-                  SizedBox(height: 8,),
+                  CustomTextFormField(controller: nametController, hintText: 'holder name'),
+                  const SizedBox(height: 8,),
                   Row(children: [
                     Flexible(
                       flex: 1,
-                      child: CustomTextFormField(controller: _phoneNumberController, hintText: '+964')),
-                    SizedBox(width:8,),
+                      child: CustomTextFormField(controller: phoneNumberController, hintText: '+964')),
+                    const SizedBox(width:8,),
                     
                       Flexible(
                         flex: 3,
-                        child: CustomTextFormField(controller:_phoneNumberController , hintText: 'phone number'))
+                        child: CustomTextFormField(controller:phoneNumberController , hintText: 'phone number'))
                   ],),
-                  SizedBox(height: 8,),
-                  CustomTextFormField(controller: _phoneNumberController, hintText: 'Phone Number'),
-                  SizedBox(height: 50,),
-                  GradientButton(ontap: (){}),
-                  SizedBox(height: 50,),
+                  const SizedBox(height: 8,),
+                  CustomTextFormField(controller: phoneNumberController, hintText: 'Phone Number'),
+                  const SizedBox(height: 50,),
+                  GradientButton.gradientButton(ontap: (){}),
+                  const SizedBox(height: 50,),
                   
     
                   

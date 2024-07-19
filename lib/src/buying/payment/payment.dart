@@ -22,7 +22,7 @@ class PaymentScreen extends StatelessWidget {
           appBar: buyinappbar('Payment', context),
           body: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 150,
                 width: double.infinity,
               ),
@@ -35,11 +35,11 @@ class PaymentScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: List.generate(3, (index) => TicketCard(index)),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 50,
                       ),
                       FadedDivider(context),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Row(
@@ -49,7 +49,7 @@ class PaymentScreen extends StatelessWidget {
                           mediumBoldText('16000'),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Row(
@@ -59,7 +59,7 @@ class PaymentScreen extends StatelessWidget {
                           mediumBoldText('16000'),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Row(
@@ -69,11 +69,11 @@ class PaymentScreen extends StatelessWidget {
                           mediumBoldText('16000'),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       FadedDivider(context),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Row(
@@ -89,11 +89,11 @@ class PaymentScreen extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: GradientButton(
+                child: GradientButton.gradientButton(
                   ontap: () {},
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
             ],

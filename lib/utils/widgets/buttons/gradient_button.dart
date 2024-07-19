@@ -3,7 +3,8 @@ import 'package:liverpod_structure/common_lib.dart';
 
 class GradientButton extends StatelessWidget {
   final VoidCallback ontap;
-  const GradientButton({required this.ontap, Key? key}) : super(key: key);
+  final String buttontittle;
+  const GradientButton.gradientButton({required this.ontap,this.buttontittle='Next', super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,16 +25,16 @@ class GradientButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(50.0),
           boxShadow: [
             BoxShadow(
-              color: Color(0xff1828BD).withOpacity(0.5),
+              color: const Color(0xff1828BD).withOpacity(0.5),
               spreadRadius: 2,
               blurRadius: 20,
-              offset: Offset(-4, -4), // Shadow position
+              offset: const Offset(-4, -4), // Shadow position
             ),
             BoxShadow(
-              color: Color(0xffE85EFF).withOpacity(0.5),
+              color: const Color(0xffE85EFF).withOpacity(0.5),
               spreadRadius: 2,
               blurRadius: 20,
-              offset: Offset(4, 4), // Shadow position
+              offset: const Offset(4, 4), // Shadow position
             ),
           ],
         ),
@@ -65,10 +66,10 @@ class GradientButton extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Center(
+                 Center(
                   child: Text(
-                    'Next',
-                    style: TextStyle(
+                    buttontittle,
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,

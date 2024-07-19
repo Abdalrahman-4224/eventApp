@@ -1,5 +1,4 @@
 import 'package:liverpod_structure/common_lib.dart';
-import 'package:riverpod/riverpod.dart';
 import 'package:flutter/material.dart';
 import '../../utils/widgets/buttons/gradient_button.dart';
 import '../../utils/widgets/form_fields/number_input_field.dart';
@@ -25,7 +24,7 @@ class _PhonNumberScreenState extends ConsumerState<PhonNumberScreen> {
               const SizedBox(
                 height: 30.20,
               ),
-              GradientButton(ontap: () {
+              GradientButton.gradientButton(ontap: () {
                 Navigator.push<void>(
                   context,
                   MaterialPageRoute<void>(
@@ -37,6 +36,6 @@ class _PhonNumberScreenState extends ConsumerState<PhonNumberScreen> {
           ),
         ),
       ),
-    );;
+    );
   }
 }

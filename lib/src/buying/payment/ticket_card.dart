@@ -27,8 +27,7 @@ Widget TicketCard(int index) {
                   backgroundColor: Color.fromARGB(57, 111, 27, 147),
                   child: SvgPicture.asset(
                     Assets.assetsIconsTicket,
-                    colorFilter:
-                        ColorFilter.mode(Color(0xff4C32CC), BlendMode.srcIn),
+                    color:Color(0xff4C32CC)
                   ),
                 ),
               ),

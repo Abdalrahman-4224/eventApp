@@ -22,34 +22,34 @@ class CustomBottomNavigationBar extends ConsumerWidget {
       onTap: (index) {
         ref.read(bottomNavProvider.notifier).state = index;
       },
-      backgroundColor: backgroundColor,
+      backgroundColor: Colors.black,
       unselectedItemColor: unselectedItemColor,
-      selectedItemColor: Colors.transparent,
+      selectedItemColor: Colors.white, // Set selected item color to white or any preferred color
       items: [
-        _buildBottomNavigationBarItem(Assets.assetsIconsVectorHome, 'Home', currentIndex == 0),
-        _buildBottomNavigationBarItem(Assets.assetsIconsTicketExpired, 'Search', currentIndex == 1),
+        _buildBottomNavigationBarItem(Assets.assetsIconsVectorHome, 'Homepage', currentIndex == 0),
+        _buildBottomNavigationBarItem(Assets.assetsIconsPurpleTicketExpired, 'Tickets', currentIndex == 1),
         _buildBottomNavigationBarItem(Assets.assetsIconsHeart, 'Likes', currentIndex == 2),
-        _buildBottomNavigationBarItem(Assets.assetsIconsProfileprofile, 'Profile', currentIndex == 3),
+        _buildBottomNavigationBarItem(Assets.assetsIconsPurpleProfile, 'Profile', currentIndex == 3),
       ],
     );
   }
 
   BottomNavigationBarItem _buildBottomNavigationBarItem(
-      String iconPath, String label, bool selected) {
-    Color iconColor = selected ? Colors.white : unselectedItemColor;
+    String iconPath, String label, bool selected) {
+  Color iconColor = selected ? Colors.white : unselectedItemColor;
 
-    return BottomNavigationBarItem(
-      icon: selected
-          ? _buildSvgIcon(iconPath)
-          : SvgPicture.asset(
-              iconPath,
-              colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
-              width: 24,
-              height: 24,
-            ),
-      label: label,
-    );
-  }
+  return BottomNavigationBarItem(
+    icon: selected
+        ? _buildSvgIcon(iconPath)
+        : SvgPicture.asset(
+            iconPath,
+            color:iconColor,
+            width: 24,
+            height: 24,
+          ),
+    label: label,
+  );
+}
 
   Widget _buildSvgIcon(String iconPath) {
     return ShaderMask(
@@ -72,5 +72,11 @@ class CustomBottomNavigationBar extends ConsumerWidget {
       end: Alignment.bottomRight,
       tileMode: TileMode.clamp,
     ).createShader(Rect.fromLTWH(0.0, 0.0, 24.0, 24.0));
+  }
+
+  TextStyle _buildSelectedTextStyle() {
+    return TextStyle(
+      foreground: Paint()..shader = _buildGradientShader(),
+    );
   }
 }
